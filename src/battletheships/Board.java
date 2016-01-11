@@ -6,15 +6,17 @@ import java.util.HashMap;
  * Created by bears8yourface on 1/11/16.
  */
 public class Board {
-    private HashMap spaces = new HashMap(100);
+    private String[][] spaces = new String[10][10];
 
     public Board() {
-        for (int i=0; i<100; i++) {
-            spaces.put(i, "");
+        for (int iRow=0; iRow<10; iRow++) {
+            for (int iCol=0; iCol<10; iCol++) {
+                spaces[iRow][iCol] = "empty space";
+            }
         }
     }
 
-    public HashMap spaces() {
+    public String[][] spaces() {
         return spaces;
     }
 }
