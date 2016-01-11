@@ -1,10 +1,8 @@
 package battletheships;
-
-import java.util.HashMap;
-
 /**
  * Created by bears8yourface on 1/11/16.
  */
+
 public class Board {
     private String[][] spaces = new String[10][10];
 
