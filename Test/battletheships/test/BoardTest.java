@@ -1,6 +1,8 @@
 package battletheships.test;
 import battletheships.Board;
+import battletheships.Ship;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -28,5 +30,13 @@ public class BoardTest {
     public void testBoardHas10Columns() {
         assertEquals(10, board.spaces()[0].length);
     }
+
+    @Test
+    public void boardCanPlaceShipVertically() {
+        Ship ship = new Ship("test ship", 2);
+        board.placeShipVertically(ship, 0, 0);
+        assertEquals(ship, board.getContents(0,0));
+    }
+
 
 }
