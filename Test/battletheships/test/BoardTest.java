@@ -70,4 +70,14 @@ public class BoardTest {
         assertEquals(ship, board.getContents(5,8));
     }
 
+    @Test
+    public void placesLongShipDiagonallyRTL() {
+        Ship s = new Ship("test boat", 5);
+        board.placeShipDiagonallyRTL(s, 4, 5);
+        assertEquals(s, board.getContents(3,6));
+        assertEquals(s, board.getContents(2,7));
+        assertEquals(s, board.getContents(1,8));
+        assertEquals(s, board.getContents(0,9));
+    }
+
 }

@@ -1,5 +1,4 @@
 package battletheships;
-import battletheships.Space;
 
 /**
  * Created by bears8yourface on 1/11/16.
