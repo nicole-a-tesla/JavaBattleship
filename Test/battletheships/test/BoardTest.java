@@ -5,8 +5,6 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import java.util.HashMap;
-
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -15,10 +13,12 @@ import static org.junit.Assert.assertEquals;
 
 public class BoardTest {
     private Board board;
+    private Ship ship;
 
     @Before
     public void setUp() {
         board = new Board();
+        ship = new Ship("test ship", 2);
     }
 
     @Test
@@ -32,11 +32,19 @@ public class BoardTest {
     }
 
     @Test
-    public void boardCanPlaceShipVertically() {
-        Ship ship = new Ship("test ship", 2);
-        board.placeShipVertically(ship, 0, 0);
+    public void boardCanSetAndGetSpaceContents() {
+        board.setContents(0, 0, ship);
         assertEquals(ship, board.getContents(0,0));
     }
+
+    @Test
+    public void boardCanPlaceShipVertically() {
+        board.placeShipVertically(ship, 0, 0);
+        assertEquals(ship, board.getContents(0,0));
+        assertEquals(ship, board.getContents(0,1));
+    }
+
+
 
 
 }
