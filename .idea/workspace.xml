@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe596a55-dbb9-47c3-86ad-319f30cd0903" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/battletheships/test/BoardTest.java" afterPath="$PROJECT_DIR$/Test/battletheships/test/BoardTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battletheships/Board.java" afterPath="$PROJECT_DIR$/src/battletheships/Board.java" />
     </list>
     <ignored path="JavaBattleship.iws" />
@@ -40,8 +39,8 @@
           <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/battletheships/Board.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2857143">
-                  <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+                <state vertical-scroll-proportion="0.74025977">
+                  <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
                   <folding>
                     <element signature="docComment;class#Board#0" expanded="false" />
                     <element signature="e#660#661#0" expanded="true" />
@@ -121,7 +120,7 @@
           <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.9025974">
+                <state vertical-scroll-proportion="0.96753246">
                   <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -628,18 +627,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 10m 09s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 11m 33s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 11m 47s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 12m 01s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 13m 32s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
@@ -656,6 +643,18 @@
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 14m 30s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 17m 23s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 18m 27s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 19m 11s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 19m 37s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -918,7 +917,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9025974">
+        <state vertical-scroll-proportion="0.96753246">
           <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -931,8 +930,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/battletheships/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2857143">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.74025977">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Board#0" expanded="false" />
             <element signature="e#660#661#0" expanded="true" />

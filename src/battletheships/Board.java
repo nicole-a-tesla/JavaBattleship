@@ -31,22 +31,21 @@ public class Board {
 
     public void placeShipVertically(Ship ship, int x_coord, int y_coord) {
         for (int i=y_coord; i<ship.getSize() + y_coord; i++)
-            spaces[x_coord][i].setContents(ship);
+            setContents(x_coord, i, ship);
     }
 
     public void placeShipHorizontally(Ship ship, int x_coord, int y_coord) {
         for (int i=x_coord; i < ship.getSize() + x_coord; i++)
-            spaces[i][y_coord].setContents(ship);
+            setContents(i, y_coord, ship);
     }
 
     public void placeShipDiagonallyLTR(Ship ship, int x_coord, int y_coord) {
         for (int i=0; i<ship.getSize(); i++)
-            spaces[x_coord + i][y_coord + i].setContents(ship);
+            setContents(x_coord + i, y_coord + i, ship);
     }
-
 
     public void placeShipDiagonallyRTL(Ship ship, int x_coord, int y_coord) {
         for (int i=0; i<ship.getSize(); i++)
-            spaces[x_coord - i][y_coord + i].setContents(ship);
+            setContents(x_coord - i, y_coord + i, ship);
     }
 }
