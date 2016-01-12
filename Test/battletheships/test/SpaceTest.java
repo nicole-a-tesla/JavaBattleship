@@ -14,7 +14,7 @@ public class SpaceTest {
     Space space = new Space();
 
     @Test
-    public void itHasAccessableContents() {
+    public void shipIsAccessable() {
         space.getShip();
     }
 
@@ -24,19 +24,19 @@ public class SpaceTest {
     }
 
     @Test
-    public void contentsCanBeSet() {
+    public void shipCanBeSet() {
         space.setShip(ship);
         assertEquals(ship, space.getShip());
     }
 
     @Test
-    public void isNotEmptyAfterContentsSet() {
+    public void isNotEmptyAfterShipSet() {
         space.setShip(ship);
         assertEquals(false, space.isEmpty());
     }
 
     @Test
-    public void initializesAsUnhit() {
+    public void initializesAsNotHit() {
         assertEquals(false, space.isHit());
     }
 
@@ -45,8 +45,6 @@ public class SpaceTest {
         space.logHit();
         assertEquals(true, space.isHit());
     }
-
-    // CHANGE SET CONTENTS TO SET SHIP
 
     @Test
     public void passesHitOnToShipIfHoldingOne() {
