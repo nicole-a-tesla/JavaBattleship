@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe596a55-dbb9-47c3-86ad-319f30cd0903" name="Default" comment="" />
+    <list default="true" id="fe596a55-dbb9-47c3-86ad-319f30cd0903" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/battletheships/test/SpaceTest.java" afterPath="$PROJECT_DIR$/Test/battletheships/test/SpaceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battletheships/Space.java" afterPath="$PROJECT_DIR$/src/battletheships/Space.java" />
+    </list>
     <ignored path="JavaBattleship.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,10 +67,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Ship.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Ship.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/battletheships/Ship.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.48701298">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
                   <folding>
                     <element signature="docComment;class#Ship#0" expanded="false" />
@@ -78,11 +81,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Space.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Space.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/battletheships/Space.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.71428573">
+                  <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
                   <folding>
                     <element signature="docComment;class#Space#0" expanded="false" />
                     <element signature="e#171#172#0" expanded="true" />
@@ -91,7 +94,6 @@
                     <element signature="e#264#265#0" expanded="true" />
                     <element signature="e#296#297#0" expanded="true" />
                     <element signature="e#326#327#0" expanded="true" />
-                    <element signature="e#368#369#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -115,10 +117,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.56926405">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -130,14 +132,18 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SpaceTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="SpaceTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Test/battletheships/test/SpaceTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+                <state vertical-scroll-proportion="0.35064936">
+                  <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;class#SpaceTest#0" expanded="false" />
+                    <element signature="e#382#383#0" expanded="true" />
+                    <element signature="e#417#418#0" expanded="true" />
+                    <element signature="e#473#474#0" expanded="true" />
+                    <element signature="e#524#525#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -202,10 +208,10 @@
         <option value="$PROJECT_DIR$/Test/battletheships/test/ShipTest.java" />
         <option value="$PROJECT_DIR$/Test/battletheships/test/PlayerTest.java" />
         <option value="$PROJECT_DIR$/Test/battletheships/test/Space.java" />
-        <option value="$PROJECT_DIR$/src/battletheships/Space.java" />
-        <option value="$PROJECT_DIR$/Test/battletheships/test/SpaceTest.java" />
         <option value="$PROJECT_DIR$/Test/battletheships/test/BoardTest.java" />
         <option value="$PROJECT_DIR$/src/battletheships/Board.java" />
+        <option value="$PROJECT_DIR$/src/battletheships/Space.java" />
+        <option value="$PROJECT_DIR$/Test/battletheships/test/SpaceTest.java" />
       </list>
     </option>
   </component>
@@ -625,34 +631,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 13m 45s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 13m 59s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 14m 12s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 14m 30s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 17m 23s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 18m 27s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 19m 11s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 19m 37s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 24m 22s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 24m 32s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 45m 22s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 47m 11s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 47m 23s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 47m 30s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 47m 59s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 48m 08s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 48m 19s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.12 at 13h 48m 52s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -667,7 +673,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2804699" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2804699" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -859,37 +865,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/battletheships/test/SpaceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#SpaceTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battletheships/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Space#0" expanded="false" />
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56926405">
+        <state vertical-scroll-proportion="0.0">
           <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -928,12 +906,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/battletheships/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48701298">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="docComment;class#Ship#0" expanded="false" />
             <element signature="e#325#326#0" expanded="true" />
             <element signature="e#352#353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/battletheships/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71428573">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#Space#0" expanded="false" />
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/battletheships/test/SpaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35064936">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#SpaceTest#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
           </folding>
         </state>
       </provider>

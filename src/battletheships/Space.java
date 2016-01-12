@@ -21,5 +21,6 @@ public class Space {
 
     public void setContents(Ship ship) {
         contents = ship;
+        isEmpty = false;
     }
 }

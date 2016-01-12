@@ -2,6 +2,7 @@ package battletheships.test;
 
 import battletheships.Ship;
 import battletheships.Space;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -10,24 +11,28 @@ import static org.junit.Assert.assertEquals;
  * Created by bears8yourface on 1/12/16.
  */
 public class SpaceTest {
+    Ship ship = new Ship("test ship", 2);
+    Space space = new Space();
 
     @Test
     public void itHasAccessableContents() {
-        Space s = new Space();
-        s.getContents();
+        space.getContents();
     }
 
     @Test
     public void itCanTellWhetherItsEmpty() {
-        Space s = new Space();
-        assertEquals(true, s.isEmpty());
+        assertEquals(true, space.isEmpty());
     }
 
     @Test
     public void contentsCanBeSet() {
-        Space space = new Space();
-        Ship ship = new Ship("test ship", 2);
         space.setContents(ship);
         assertEquals(ship, space.getContents());
+    }
+
+    @Test
+    public void isNotEmptyAfterContentsSet() {
+        space.setContents(ship);
+        assertEquals(false, space.isEmpty());
     }
 }
