@@ -1,5 +1,6 @@
 package battletheships.test;
 import battletheships.Player;
+import battletheships.Ship;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -23,8 +24,7 @@ public class PlayerTest {
 
     @Test
     public void playerHasFiveShips(){
-        String[][] ships = player.ships();
-        int howManyShips = ships.length;
-        assertEquals(5, howManyShips);
+        assertEquals(5, player.ships().length);
     }
+    
 }
