@@ -44,7 +44,30 @@ public class BoardTest {
         assertEquals(ship, board.getContents(0,1));
     }
 
+    @Test
+    public void testClearsBoard() {
+        assertEquals(null, board.getContents(0,0));
+    }
 
+    @Test
+    public void boardCanPlaceShipHorizontally() {
+        board.placeShipHorizontally(ship, 5, 5);
+        assertEquals(ship, board.getContents(5, 5));
+        assertEquals(ship, board.getContents(6, 5));
+    }
 
+    @Test
+    public void placesShipDiagonallyLTR() {
+        board.placeShipDiagonallyLTR(ship, 1, 2);
+        assertEquals(ship, board.getContents(1,2));
+        assertEquals(ship, board.getContents(2,3));
+    }
+
+    @Test
+    public void placeShipsDiagonallyRTL() {
+        board.placeShipDiagonallyRTL(ship, 6, 7);
+        assertEquals(ship, board.getContents(6,7));
+        assertEquals(ship, board.getContents(5,8));
+    }
 
 }
