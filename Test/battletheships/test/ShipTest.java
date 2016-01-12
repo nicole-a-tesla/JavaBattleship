@@ -27,4 +27,16 @@ public class ShipTest {
         assertEquals(3, ship.getSize());
     }
 
+    @Test
+    public void hitCountInitializedAtZero() {
+        assertEquals(0, ship.hitCount());
+    }
+
+    @Test
+    public void hitCountIncrementsWhenHitIsLogged() {
+        ship.logHit();
+        assertEquals(1, ship.hitCount());
+
+    }
+
 }

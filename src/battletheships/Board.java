@@ -19,13 +19,16 @@ public class Board {
         return spaces;
     }
 
+    public Space getSpace(int x_coord, int y_coord) {
+        return spaces[x_coord][y_coord];
+    }
+
     public Ship getContents(int x_coord, int y_coord) {
-        Space thisSpace = spaces[x_coord][y_coord];
-        return thisSpace.getContents();
+        return spaces[x_coord][y_coord].getShip();
     }
 
     public void setContents(int x_coord, int y_coord, Ship ship) {
-        spaces[x_coord][y_coord].setContents(ship);
+        spaces[x_coord][y_coord].setShip(ship);
     }
 
     public void placeShipVertically(Ship ship, int x_coord, int y_coord) {
@@ -46,5 +49,9 @@ public class Board {
     public void placeShipDiagonallyRTL(Ship ship, int x_coord, int y_coord) {
         for (int i=0; i<ship.getSize(); i++)
             setContents(x_coord - i, y_coord + i, ship);
+    }
+
+    public void logStrike(int x_coord, int y_coord) {
+        getSpace(x_coord, y_coord).logHit();
     }
 }

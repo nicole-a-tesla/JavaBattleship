@@ -2,7 +2,6 @@ package battletheships.test;
 
 import battletheships.Ship;
 import battletheships.Space;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -16,7 +15,7 @@ public class SpaceTest {
 
     @Test
     public void itHasAccessableContents() {
-        space.getContents();
+        space.getShip();
     }
 
     @Test
@@ -26,13 +25,34 @@ public class SpaceTest {
 
     @Test
     public void contentsCanBeSet() {
-        space.setContents(ship);
-        assertEquals(ship, space.getContents());
+        space.setShip(ship);
+        assertEquals(ship, space.getShip());
     }
 
     @Test
     public void isNotEmptyAfterContentsSet() {
-        space.setContents(ship);
+        space.setShip(ship);
         assertEquals(false, space.isEmpty());
+    }
+
+    @Test
+    public void initializesAsUnhit() {
+        assertEquals(false, space.isHit());
+    }
+
+    @Test
+    public void logsHits() {
+        space.logHit();
+        assertEquals(true, space.isHit());
+    }
+
+    // CHANGE SET CONTENTS TO SET SHIP
+
+    @Test
+    public void passesHitOnToShipIfHoldingOne() {
+        space.setShip(ship);
+        space.logHit();
+
+        assertEquals(1, ship.hitCount());
     }
 }

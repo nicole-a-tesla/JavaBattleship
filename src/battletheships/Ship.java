@@ -6,6 +6,7 @@ package battletheships;
 public class Ship {
     private String name;
     private int size;
+    private int hitCount;
 
     public Ship(String name, int size) {
         this.name = name;
@@ -18,5 +19,13 @@ public class Ship {
 
     public int getSize() {
         return size;
+    }
+
+    public int hitCount() {
+        return hitCount;
+    }
+
+     public void logHit() {
+        hitCount++;
     }
 }

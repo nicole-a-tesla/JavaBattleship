@@ -80,4 +80,10 @@ public class BoardTest {
         assertEquals(s, board.getContents(0,9));
     }
 
+    @Test
+    public void logsStrikes(){
+        board.logStrike(0,0);
+        assertEquals(true, board.spaces()[0][0].isHit());
+    }
+
 }
