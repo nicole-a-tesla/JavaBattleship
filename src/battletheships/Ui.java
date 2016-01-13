@@ -13,4 +13,8 @@ public class Ui {
     public Printer getPrinter() {
         return printer;
     }
+
+    public void print(String string) {
+        printer.print(string);
+    }
 }
