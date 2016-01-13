@@ -4,6 +4,8 @@ import battletheships.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.swing.plaf.nimbus.State;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -145,6 +147,33 @@ public class BoardParserTest {
         List parsed = parser.parseRow(spaces);
 
         assertEquals(expected, parsed);
+    }
+
+    private ArrayList generateExpectedEmptyRow() {
+        ArrayList expectedRow = new ArrayList();
+        for (int i=0; i<10; i++) {
+            expectedRow.add(StateTranslator.WATER);
+        }
+        return expectedRow;
+    }
+
+    private ArrayList<ArrayList> generateExpectedEmptyBoard() {
+        ArrayList<ArrayList> expectedBoard = new ArrayList<ArrayList>();
+        for (int i=0; i<10; i++) {
+            expectedBoard.add(generateExpectedEmptyRow());
+        }
+        return expectedBoard;
+    }
+
+    @Test
+    public void parseBoardCorrectlyParsesBoard() {
+        ArrayList<ArrayList> expectedEmptyBoard = generateExpectedEmptyBoard();
+
+        Board board = new Board();
+        ArrayList<ArrayList> parsedEmptyBoard = parser.parse(board);
+
+        assertEquals(expectedEmptyBoard, parsedEmptyBoard);
+
     }
 
 }

@@ -1,5 +1,6 @@
 package battletheships;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +14,14 @@ public class BoardParser {
         this.translator = translator;
     }
 
-    public void parse(Board board) {
+    public ArrayList<ArrayList> parse(Board board) {
+        ArrayList parsedBoard = new ArrayList();
+        Space[][] spaces = board.spaces();
 
+        for (int i=0; i<spaces.length; i++) {
+            parsedBoard.add(parseRow(spaces[i]));
+        }
+        return parsedBoard;
     }
 
     public List parseRow(Space[] row) {
