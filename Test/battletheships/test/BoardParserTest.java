@@ -151,6 +151,7 @@ public class BoardParserTest {
 
     private ArrayList generateExpectedEmptyRow() {
         ArrayList expectedRow = new ArrayList();
+
         for (int i=0; i<10; i++) {
             expectedRow.add(StateTranslator.WATER);
         }
@@ -159,9 +160,11 @@ public class BoardParserTest {
 
     private ArrayList<ArrayList> generateExpectedEmptyBoard() {
         ArrayList<ArrayList> expectedBoard = new ArrayList<ArrayList>();
+
         for (int i=0; i<10; i++) {
             expectedBoard.add(generateExpectedEmptyRow());
         }
+
         return expectedBoard;
     }
 
