@@ -23,7 +23,7 @@ public class Board {
         return spaces[x_coord][y_coord];
     }
 
-    public Ship getContents(int x_coord, int y_coord) {
+    public Ship getShip(int x_coord, int y_coord) {
         return spaces[x_coord][y_coord].getShip();
     }
 

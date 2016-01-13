@@ -26,5 +26,5 @@ public class PlayerTest {
     public void playerHasFiveShips(){
         assertEquals(5, player.ships().length);
     }
-    
+
 }
