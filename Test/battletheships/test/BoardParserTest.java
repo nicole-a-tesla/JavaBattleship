@@ -4,6 +4,9 @@ import battletheships.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -13,6 +16,9 @@ public class BoardParserTest {
     BoardParser parser;
     StateTranslator translator;
     Space space;
+    Space space2;
+    List<StateTranslator> expected;
+    Ship ship;
 
     @Before
     public void setup() {
@@ -62,6 +68,83 @@ public class BoardParserTest {
         space.logHit();
         StateTranslator miss = StateTranslator.MISS;
         assertEquals(miss, parser.parseSpace(space));
+    }
+
+    @Before
+    public void setupVarsForRowParser() {
+        space = new Space();
+        space2 = new Space();
+        expected = new ArrayList<>();
+        ship = new Ship("test ship", 2);
+    }
+
+    @Test
+    public void parsesRowOfEmptySpaces() {
+        Space[] spaces = {space, space2};
+        expected.add(StateTranslator.WATER);
+        expected.add(StateTranslator.WATER);
+
+        List parsed = parser.parseRow(spaces);
+
+        assertEquals(expected, parsed);
+    }
+
+    @Test
+    public void parsesRowOfShips() {
+        space.setShip(ship);
+        space2.setShip(ship);
+        Space[] spaces = {space, space2};
+        expected.add(StateTranslator.SHIP);
+        expected.add(StateTranslator.SHIP);
+
+        List parsed = parser.parseRow(spaces);
+
+        assertEquals(expected, parsed);
+
+    }
+
+    @Test
+    public void parsesRowOfHitShips() {
+        space.setShip(ship);
+        space2.setShip(ship);
+        space.logHit();
+        space2.logHit();
+
+        Space[] spaces = {space, space2};
+        expected.add(StateTranslator.HIT);
+        expected.add(StateTranslator.HIT);
+
+        List parsed = parser.parseRow(spaces);
+
+        assertEquals(expected, parsed);
+
+    }
+
+    @Test
+    public void parsesRowOfMISSES() {
+        space.logHit();
+        space2.logHit();
+
+        Space[] spaces = {space, space2};
+        expected.add(StateTranslator.MISS);
+        expected.add(StateTranslator.MISS);
+
+        List parsed = parser.parseRow(spaces);
+
+        assertEquals(expected, parsed);
+
+    }
+
+    @Test
+    public void parseRowMaintainsOrder() {
+        space.setShip(ship);
+        Space[] spaces = {space, space2};
+        expected.add(StateTranslator.SHIP);
+        expected.add(StateTranslator.WATER);
+
+        List parsed = parser.parseRow(spaces);
+
+        assertEquals(expected, parsed);
     }
 
 }
