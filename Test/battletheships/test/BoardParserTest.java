@@ -37,7 +37,7 @@ public class BoardParserTest {
     }
 
     @Test
-    public void parseSpaceTranslatesEMPTY() {
+    public void parseSpaceTranslatesWATER() {
         StateTranslator water = StateTranslator.WATER;
         assertEquals(water, parser.parseSpace(space));
     }

@@ -1,5 +1,8 @@
 package battletheships;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by bears8yourface on 1/13/16.
  */
@@ -14,8 +17,13 @@ public class BoardParser {
 
     }
 
-    public String[] parseRow(Space[] row) {
-        return new String[10];
+    public List parseRow(Space[] row) {
+        List<StateTranslator> parsedRow = new ArrayList<StateTranslator>();
+
+        for (Space space : row) {
+            parsedRow.add(parseSpace(space));
+        }
+        return parsedRow;
     }
 
     public StateTranslator parseSpace(Space space) {
