@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe596a55-dbb9-47c3-86ad-319f30cd0903" name="Default" comment="" />
+    <list default="true" id="fe596a55-dbb9-47c3-86ad-319f30cd0903" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java" afterPath="$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battletheships/BoardParser.java" afterPath="$PROJECT_DIR$/src/battletheships/BoardParser.java" />
+    </list>
     <ignored path="JavaBattleship.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,45 +27,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.48226163">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/battletheships/Game.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-                  <folding>
-                    <element signature="docComment;class#Game#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Ui.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/battletheships/Ui.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-                  <folding>
-                    <element signature="docComment;class#Ui#0" expanded="false" />
-                    <element signature="e#153#154#0" expanded="true" />
-                    <element signature="e#191#192#0" expanded="true" />
-                    <element signature="e#226#227#0" expanded="true" />
-                    <element signature="e#256#257#0" expanded="true" />
-                    <element signature="e#296#297#0" expanded="true" />
-                    <element signature="e#333#334#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="BoardParser.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/battletheships/BoardParser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.34793815">
-                  <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+                <state vertical-scroll-proportion="0.7773655">
+                  <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
                   <folding>
                     <element signature="docComment;class#BoardParser#0" expanded="false" />
-                    <element signature="e#188#189#0" expanded="true" />
-                    <element signature="e#225#226#0" expanded="true" />
+                    <element signature="e#185#186#0" expanded="true" />
+                    <element signature="e#229#230#0" expanded="true" />
+                    <element signature="e#319#320#0" expanded="true" />
+                    <element signature="e#356#357#0" expanded="true" />
+                    <element signature="e#678#679#0" expanded="true" />
+                    <element signature="e#733#734#0" expanded="true" />
+                    <element signature="e#777#778#0" expanded="true" />
+                    <element signature="e#833#834#0" expanded="true" />
+                    <element signature="e#875#876#0" expanded="true" />
+                    <element signature="e#931#932#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -90,6 +71,18 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="StateTranslator.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/battletheships/StateTranslator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+                  <folding>
+                    <element signature="docComment;class#StateTranslator#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/battletheships/Player.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -110,9 +103,10 @@
             <entry file="file://$PROJECT_DIR$/src/battletheships/Space.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+                  <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
                   <folding>
                     <element signature="docComment;class#Space#0" expanded="false" />
+                    <element signature="e#275#276#0" expanded="true" />
                     <element signature="e#302#303#0" expanded="true" />
                     <element signature="e#334#335#0" expanded="true" />
                     <element signature="e#364#365#0" expanded="true" />
@@ -197,13 +191,15 @@
           <file leaf-file-name="BoardParserTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.0438144">
-                  <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+                <state vertical-scroll-proportion="0.51576996">
+                  <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;class#BoardParserTest#0" expanded="false" />
-                    <element signature="e#358#359#0" expanded="true" />
-                    <element signature="e#400#401#0" expanded="true" />
+                    <element signature="e#340#341#0" expanded="true" />
+                    <element signature="e#392#393#0" expanded="true" />
+                    <element signature="e#728#729#0" expanded="true" />
+                    <element signature="e#763#764#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -301,6 +297,8 @@
         <option value="$PROJECT_DIR$/Test/battletheships/test/UiTest.java" />
         <option value="$PROJECT_DIR$/Test/battletheships/test/BoardTest.java" />
         <option value="$PROJECT_DIR$/src/battletheships/Board.java" />
+        <option value="$PROJECT_DIR$/src/battletheships/SpaceStateTranslator.java" />
+        <option value="$PROJECT_DIR$/src/battletheships/StateTranslator.java" />
         <option value="$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java" />
         <option value="$PROJECT_DIR$/src/battletheships/BoardParser.java" />
       </list>
@@ -734,34 +732,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 12h 13m 19s.xml">
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 13h 20m 01s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 12h 13m 33s.xml">
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 13h 21m 24s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 12h 17m 36s.xml">
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 13h 23m 05s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 12h 17m 52s.xml">
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 13h 31m 16s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 12h 27m 20s.xml">
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 13h 33m 45s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 12h 28m 01s.xml">
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 13h 35m 47s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 12h 28m 29s.xml">
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 13h 38m 33s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 12h 51m 22s.xml">
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 13h 42m 25s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 12h 52m 01s.xml">
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 13h 46m 40s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 12h 56m 53s.xml">
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 13h 47m 57s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -776,7 +774,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38913363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16740088" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12600969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -975,22 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/battletheships/Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="docComment;class#Ship#0" expanded="false" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/battletheships/test/ConsolePrinterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.92783505">
@@ -1002,16 +984,6 @@
             <element signature="e#514#515#0" expanded="true" />
             <element signature="e#768#769#0" expanded="true" />
             <element signature="e#805#806#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battletheships/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-          <folding>
-            <element signature="docComment;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1032,37 +1004,6 @@
           <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
           <folding>
             <element signature="docComment;class#Printer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battletheships/Space.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="docComment;class#Space#0" expanded="false" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/battletheships/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Player#0" expanded="false" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1110,6 +1051,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#BoardTest#0" expanded="false" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="e#2342#2343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/battletheships/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1130,24 +1086,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardTest.java">
+    <entry file="file://$PROJECT_DIR$/src/battletheships/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.30927834">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#BoardTest#0" expanded="false" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#2283#2284#0" expanded="true" />
-            <element signature="e#2342#2343#0" expanded="true" />
+            <element signature="docComment;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/battletheships/Ui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.5798969">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
             <element signature="docComment;class#Ui#0" expanded="false" />
@@ -1163,25 +1114,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0438144">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.51576996">
+          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#BoardParserTest#0" expanded="false" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/battletheships/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="docComment;class#Space#0" expanded="false" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/battletheships/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Player#0" expanded="false" />
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/battletheships/StateTranslator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="docComment;class#StateTranslator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/battletheships/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#Ship#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/battletheships/BoardParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34793815">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.7773655">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#BoardParser#0" expanded="false" />
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,8 +1,6 @@
 package battletheships.test;
 
-import battletheships.Board;
-import battletheships.BoardParser;
-import battletheships.Space;
+import battletheships.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,9 +11,12 @@ import static org.junit.Assert.assertEquals;
  */
 public class BoardParserTest {
     BoardParser parser;
+    StateTranslator translator;
+    Space space;
+
     @Before
     public void setup() {
-        parser = new BoardParser();
+        parser = new BoardParser(translator);
     }
 
     @Test
@@ -28,6 +29,39 @@ public class BoardParserTest {
     public void parseRowTakesArrayOfSpaces() {
         Space[] fakeRow = {new Space(), new Space(), new Space()};
         parser.parseRow(fakeRow);
+    }
+
+    @Before
+    public void setupSpace() {
+        space = new Space();
+    }
+
+    @Test
+    public void parseSpaceTranslatesEMPTY() {
+        StateTranslator water = StateTranslator.WATER;
+        assertEquals(water, parser.parseSpace(space));
+    }
+
+    @Test
+    public void parseSpaceTranslatesSHIP() {
+        space.setShip(new Ship("test ship", 2));
+        StateTranslator ship = StateTranslator.SHIP;
+        assertEquals(ship, parser.parseSpace(space));
+    }
+
+    @Test
+    public void parseSpaceTranslatesHIT() {
+        space.setShip(new Ship("test ship", 2));
+        space.logHit();
+        StateTranslator hit = StateTranslator.HIT;
+        assertEquals(hit, parser.parseSpace(space));
+    }
+
+    @Test
+    public void parseSpaceTranslatesMISS() {
+        space.logHit();
+        StateTranslator miss = StateTranslator.MISS;
+        assertEquals(miss, parser.parseSpace(space));
     }
 
 }
