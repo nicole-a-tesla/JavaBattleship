@@ -1,6 +1,7 @@
 package battletheships.test;
 import battletheships.Board;
 import battletheships.Ship;
+import battletheships.Space;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -85,4 +86,8 @@ public class BoardTest {
         assertEquals(true, board.spaces()[0][0].isHit());
     }
 
+    @Test
+    public void boardCanTellIfSpaceIsEmpty() {
+        assertEquals(true, board.isSpaceEmpty(0,0));
+    }
 }

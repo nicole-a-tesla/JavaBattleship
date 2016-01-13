@@ -19,39 +19,43 @@ public class Board {
         return spaces;
     }
 
-    public Space getSpace(int x_coord, int y_coord) {
-        return spaces[x_coord][y_coord];
+    public Space getSpace(int x, int y) {
+        return spaces[x][y];
     }
 
-    public Ship getShip(int x_coord, int y_coord) {
-        return spaces[x_coord][y_coord].getShip();
+    public Ship getShip(int x, int y) {
+        return getSpace(x, y).getShip();
     }
 
-    public void setContents(int x_coord, int y_coord, Ship ship) {
-        spaces[x_coord][y_coord].setShip(ship);
+    public Boolean isSpaceEmpty(int x, int y) {
+        return getSpace(x, y).isEmpty();
     }
 
-    public void placeShipVertically(Ship ship, int x_coord, int y_coord) {
-        for (int i=y_coord; i<ship.getSize() + y_coord; i++)
-            setContents(x_coord, i, ship);
+    public void setContents(int x, int y, Ship ship) {
+        getSpace(x,y).setShip(ship);
     }
 
-    public void placeShipHorizontally(Ship ship, int x_coord, int y_coord) {
-        for (int i=x_coord; i < ship.getSize() + x_coord; i++)
-            setContents(i, y_coord, ship);
+    public void placeShipVertically(Ship ship, int x, int y) {
+        for (int i=y; i<ship.getSize() + y; i++)
+            setContents(x, i, ship);
     }
 
-    public void placeShipDiagonallyLTR(Ship ship, int x_coord, int y_coord) {
+    public void placeShipHorizontally(Ship ship, int x, int y) {
+        for (int i=x; i < ship.getSize() + x; i++)
+            setContents(i, y, ship);
+    }
+
+    public void placeShipDiagonallyLTR(Ship ship, int x, int y) {
         for (int i=0; i<ship.getSize(); i++)
-            setContents(x_coord + i, y_coord + i, ship);
+            setContents(x + i, y + i, ship);
     }
 
-    public void placeShipDiagonallyRTL(Ship ship, int x_coord, int y_coord) {
+    public void placeShipDiagonallyRTL(Ship ship, int x, int y) {
         for (int i=0; i<ship.getSize(); i++)
-            setContents(x_coord - i, y_coord + i, ship);
+            setContents(x - i, y + i, ship);
     }
 
-    public void logStrike(int x_coord, int y_coord) {
-        getSpace(x_coord, y_coord).logHit();
+    public void logStrike(int x, int y) {
+        getSpace(x, y).logHit();
     }
 }
