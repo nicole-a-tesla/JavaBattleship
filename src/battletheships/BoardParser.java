@@ -7,28 +7,23 @@ import java.util.List;
  * Created by bears8yourface on 1/13/16.
  */
 public class BoardParser {
-    SpaceState translator;
-
-    public BoardParser(SpaceState translator) {
-        this.translator = translator;
-    }
 
     public ArrayList<ArrayList> parse(Board board) {
         ArrayList parsedBoard = new ArrayList();
         Space[][] spaces = board.spaces();
 
-        for (int i=0; i<spaces.length; i++) {
+        for (int i=0; i<spaces.length; i++)
             parsedBoard.add(parseRow(spaces[i]));
-        }
+        
         return parsedBoard;
     }
 
     public List parseRow(Space[] row) {
         List<SpaceState> parsedRow = new ArrayList<SpaceState>();
 
-        for (Space space : row) {
+        for (Space space : row)
             parsedRow.add(parseSpace(space));
-        }
+
         return parsedRow;
     }
 

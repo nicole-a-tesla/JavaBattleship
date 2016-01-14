@@ -14,7 +14,6 @@ import static org.junit.Assert.assertEquals;
  */
 public class BoardParserTest {
     BoardParser parser;
-    SpaceState translator;
     Space space;
     Space space2;
     List<SpaceState> expected;
@@ -22,7 +21,7 @@ public class BoardParserTest {
 
     @Before
     public void setup() {
-        parser = new BoardParser(translator);
+        parser = new BoardParser();
     }
 
     @Test
@@ -150,18 +149,17 @@ public class BoardParserTest {
     private ArrayList generateExpectedEmptyRow() {
         ArrayList expectedRow = new ArrayList();
 
-        for (int i=0; i<10; i++) {
+        for (int i=0; i<10; i++)
             expectedRow.add(SpaceState.WATER);
-        }
+
         return expectedRow;
     }
 
     private ArrayList<ArrayList> generateExpectedEmptyBoard() {
-        ArrayList<ArrayList> expectedBoard = new ArrayList<ArrayList>();
+        ArrayList<ArrayList> expectedBoard = new ArrayList();
 
-        for (int i=0; i<10; i++) {
+        for (int i=0; i<10; i++)
             expectedBoard.add(generateExpectedEmptyRow());
-        }
 
         return expectedBoard;
     }

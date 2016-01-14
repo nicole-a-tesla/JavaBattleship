@@ -16,20 +16,16 @@ public class BoardPrintFormatter {
     public ArrayList<ArrayList> format(ArrayList<ArrayList> parsedBoard) {
         ArrayList<ArrayList> formatted = new ArrayList<ArrayList>();
 
-        for (ArrayList row : parsedBoard) {
+        for (ArrayList row : parsedBoard)
             formatted.add(formatRow(row));
-        }
-
         return formatted;
     }
 
     public ArrayList<String> formatRow(ArrayList row) {
         ArrayList formattedRow = new ArrayList();
 
-        for (Object spaceState : row) {
+        for (Object spaceState : row)
             formattedRow.add(formatSpace((SpaceState) spaceState));
-        }
-
         return formattedRow;
     }
 

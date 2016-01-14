@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe596a55-dbb9-47c3-86ad-319f30cd0903" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/battletheships/test/BoardPrintFormatterTest.java" afterPath="$PROJECT_DIR$/Test/battletheships/test/BoardPrintFormatterTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java" afterPath="$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battletheships/BoardParser.java" afterPath="$PROJECT_DIR$/src/battletheships/BoardParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/battletheships/BoardPrintFormatter.java" afterPath="$PROJECT_DIR$/src/battletheships/BoardPrintFormatter.java" />
     </list>
     <ignored path="JavaBattleship.iws" />
@@ -27,11 +28,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.47864076">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="BoardParser.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="BoardParser.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/battletheships/BoardParser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+                <state vertical-scroll-proportion="0.33112583">
+                  <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;class#BoardParser#0" expanded="false" />
@@ -40,31 +41,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BoardPrintFormatter.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BoardPrintFormatter.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/battletheships/BoardPrintFormatter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.1258278">
-                  <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;class#BoardPrintFormatter#0" expanded="false" />
                     <element signature="e#257#258#0" expanded="true" />
                     <element signature="e#311#312#0" expanded="true" />
                     <element signature="e#443#454#0" expanded="true" />
-                    <element signature="e#905#906#0" expanded="true" />
-                    <element signature="e#968#969#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SpaceState.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/battletheships/SpaceState.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-                  <folding>
-                    <element signature="docComment;class#SpaceState#0" expanded="false" />
+                    <element signature="e#879#880#0" expanded="true" />
+                    <element signature="e#942#943#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -111,10 +100,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BoardPrintFormatterTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BoardPrintFormatterTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardPrintFormatterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.62913907">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="54" column="79" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="79" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -124,15 +113,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BoardParserTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="BoardParserTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+                <state vertical-scroll-proportion="4.86755">
+                  <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;class#BoardParserTest#0" expanded="false" />
-                    <element signature="e#3790#3801#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -231,14 +219,14 @@
         <option value="$PROJECT_DIR$/Test/battletheships/test/BoardTest.java" />
         <option value="$PROJECT_DIR$/src/battletheships/Board.java" />
         <option value="$PROJECT_DIR$/src/battletheships/SpaceStateTranslator.java" />
-        <option value="$PROJECT_DIR$/src/battletheships/BoardParser.java" />
-        <option value="$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java" />
         <option value="$PROJECT_DIR$/src/battletheships/PrintFormattingDictionary.java" />
         <option value="$PROJECT_DIR$/src/battletheships/PrintKey.java" />
         <option value="$PROJECT_DIR$/src/battletheships/StateTranslator.java" />
         <option value="$PROJECT_DIR$/src/battletheships/SpaceState.java" />
         <option value="$PROJECT_DIR$/Test/battletheships/test/BoardPrintFormatterTest.java" />
         <option value="$PROJECT_DIR$/src/battletheships/BoardPrintFormatter.java" />
+        <option value="$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java" />
+        <option value="$PROJECT_DIR$/src/battletheships/BoardParser.java" />
       </list>
     </option>
   </component>
@@ -670,12 +658,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 16h 49m 06s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 16h 49m 32s.xml">
-      <configuration name="All in JavaBattleship" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_JavaBattleship - 2016.01.13 at 20h 24m 02s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
@@ -698,6 +680,12 @@
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_JavaBattleship - 2016.01.13 at 20h 33m 56s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 20h 42m 30s.xml">
+      <configuration name="All in JavaBattleship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_JavaBattleship - 2016.01.13 at 20h 45m 01s.xml">
       <configuration name="All in JavaBattleship" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -998,18 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#BoardParserTest#0" expanded="false" />
-            <element signature="e#3790#3801#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.8367347">
@@ -1087,17 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/battletheships/BoardParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#BoardParser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/battletheships/PrintKey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1106,19 +1071,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/battletheships/SpaceState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;class#SpaceState#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardPrintFormatterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62913907">
+        <state vertical-scroll-proportion="0.0">
           <caret line="54" column="79" selection-start-line="54" selection-start-column="79" selection-end-line="54" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1127,18 +1082,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/battletheships/SpaceState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1986755">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#SpaceState#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/battletheships/BoardPrintFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1258278">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#BoardPrintFormatter#0" expanded="false" />
             <element signature="e#257#258#0" expanded="true" />
             <element signature="e#311#312#0" expanded="true" />
             <element signature="e#443#454#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/battletheships/test/BoardParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.86755">
+          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#BoardParserTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/battletheships/BoardParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33112583">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#BoardParser#0" expanded="false" />
           </folding>
         </state>
       </provider>
