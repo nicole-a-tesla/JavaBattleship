@@ -2,9 +2,7 @@ package battletheships.test;
 
 import battletheships.BoardPrintFormatter;
 import battletheships.PrintKey;
-import battletheships.Space;
 import battletheships.SpaceState;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
