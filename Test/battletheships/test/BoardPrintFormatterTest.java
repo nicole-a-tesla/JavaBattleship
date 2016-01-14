@@ -2,7 +2,7 @@ package battletheships.test;
 
 import battletheships.BoardPrintFormatter;
 import battletheships.PrintKey;
-import battletheships.StateTranslator;
+import battletheships.SpaceState;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import static org.junit.Assert.assertEquals;
 public class BoardPrintFormatterTest {
     private PrintKey printKey = new PrintKey();
 
-    private ArrayList generateParsedRowOf(StateTranslator state) {
+    private ArrayList generateParsedRowOf(SpaceState state) {
         ArrayList row = new ArrayList();
 
         for (int i=0; i<10; i++)
@@ -24,7 +24,7 @@ public class BoardPrintFormatterTest {
         return row;
     }
 
-    private ArrayList<ArrayList> generateParsedBoardOf(StateTranslator state) {
+    private ArrayList<ArrayList> generateParsedBoardOf(SpaceState state) {
         ArrayList<ArrayList> board = new ArrayList<>();
 
         for (int i=0; i<10; i++)
@@ -32,7 +32,7 @@ public class BoardPrintFormatterTest {
         return board;
     }
 
-    private ArrayList generateFormattedRowOf(StateTranslator state) {
+    private ArrayList generateFormattedRowOf(SpaceState state) {
         ArrayList row = new ArrayList();
 
         for (int i=0; i<10; i++)
@@ -40,7 +40,7 @@ public class BoardPrintFormatterTest {
         return row;
     }
 
-    private ArrayList<ArrayList> generateFormattedBoardOf(StateTranslator state) {
+    private ArrayList<ArrayList> generateFormattedBoardOf(SpaceState state) {
         ArrayList<ArrayList> board = new ArrayList<>();
 
         for (int i=0; i<10; i++)
@@ -50,9 +50,9 @@ public class BoardPrintFormatterTest {
 
     @Test
     public void formatsBoardOfWater() {
-        ArrayList<ArrayList> parsedBoard = generateParsedBoardOf(StateTranslator.WATER);
+        ArrayList<ArrayList> parsedBoard = generateParsedBoardOf(SpaceState.WATER);
         BoardPrintFormatter formatter = new BoardPrintFormatter(printKey);
-        ArrayList expected = generateFormattedBoardOf(StateTranslator.WATER);
+        ArrayList expected = generateFormattedBoardOf(SpaceState.WATER);
         ArrayList formatted = formatter.format(parsedBoard);
 
         assertEquals(expected, formatted);

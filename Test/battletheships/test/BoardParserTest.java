@@ -4,8 +4,6 @@ import battletheships.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.swing.plaf.nimbus.State;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,10 +14,10 @@ import static org.junit.Assert.assertEquals;
  */
 public class BoardParserTest {
     BoardParser parser;
-    StateTranslator translator;
+    SpaceState translator;
     Space space;
     Space space2;
-    List<StateTranslator> expected;
+    List<SpaceState> expected;
     Ship ship;
 
     @Before
@@ -46,14 +44,14 @@ public class BoardParserTest {
 
     @Test
     public void parseSpaceTranslatesWATER() {
-        StateTranslator water = StateTranslator.WATER;
+        SpaceState water = SpaceState.WATER;
         assertEquals(water, parser.parseSpace(space));
     }
 
     @Test
     public void parseSpaceTranslatesSHIP() {
         space.setShip(new Ship("test ship", 2));
-        StateTranslator ship = StateTranslator.SHIP;
+        SpaceState ship = SpaceState.SHIP;
         assertEquals(ship, parser.parseSpace(space));
     }
 
@@ -61,14 +59,14 @@ public class BoardParserTest {
     public void parseSpaceTranslatesHIT() {
         space.setShip(new Ship("test ship", 2));
         space.logHit();
-        StateTranslator hit = StateTranslator.HIT;
+        SpaceState hit = SpaceState.HIT;
         assertEquals(hit, parser.parseSpace(space));
     }
 
     @Test
     public void parseSpaceTranslatesMISS() {
         space.logHit();
-        StateTranslator miss = StateTranslator.MISS;
+        SpaceState miss = SpaceState.MISS;
         assertEquals(miss, parser.parseSpace(space));
     }
 
@@ -83,8 +81,8 @@ public class BoardParserTest {
     @Test
     public void parsesRowOfEmptySpaces() {
         Space[] spaces = {space, space2};
-        expected.add(StateTranslator.WATER);
-        expected.add(StateTranslator.WATER);
+        expected.add(SpaceState.WATER);
+        expected.add(SpaceState.WATER);
 
         List parsed = parser.parseRow(spaces);
 
@@ -96,8 +94,8 @@ public class BoardParserTest {
         space.setShip(ship);
         space2.setShip(ship);
         Space[] spaces = {space, space2};
-        expected.add(StateTranslator.SHIP);
-        expected.add(StateTranslator.SHIP);
+        expected.add(SpaceState.SHIP);
+        expected.add(SpaceState.SHIP);
 
         List parsed = parser.parseRow(spaces);
 
@@ -113,8 +111,8 @@ public class BoardParserTest {
         space2.logHit();
 
         Space[] spaces = {space, space2};
-        expected.add(StateTranslator.HIT);
-        expected.add(StateTranslator.HIT);
+        expected.add(SpaceState.HIT);
+        expected.add(SpaceState.HIT);
 
         List parsed = parser.parseRow(spaces);
 
@@ -128,8 +126,8 @@ public class BoardParserTest {
         space2.logHit();
 
         Space[] spaces = {space, space2};
-        expected.add(StateTranslator.MISS);
-        expected.add(StateTranslator.MISS);
+        expected.add(SpaceState.MISS);
+        expected.add(SpaceState.MISS);
 
         List parsed = parser.parseRow(spaces);
 
@@ -141,8 +139,8 @@ public class BoardParserTest {
     public void parseRowMaintainsOrder() {
         space.setShip(ship);
         Space[] spaces = {space, space2};
-        expected.add(StateTranslator.SHIP);
-        expected.add(StateTranslator.WATER);
+        expected.add(SpaceState.SHIP);
+        expected.add(SpaceState.WATER);
 
         List parsed = parser.parseRow(spaces);
 
@@ -153,7 +151,7 @@ public class BoardParserTest {
         ArrayList expectedRow = new ArrayList();
 
         for (int i=0; i<10; i++) {
-            expectedRow.add(StateTranslator.WATER);
+            expectedRow.add(SpaceState.WATER);
         }
         return expectedRow;
     }

@@ -1,6 +1,5 @@
 package battletheships;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,9 +7,9 @@ import java.util.List;
  * Created by bears8yourface on 1/13/16.
  */
 public class BoardParser {
-    StateTranslator translator;
+    SpaceState translator;
 
-    public BoardParser(StateTranslator translator) {
+    public BoardParser(SpaceState translator) {
         this.translator = translator;
     }
 
@@ -25,7 +24,7 @@ public class BoardParser {
     }
 
     public List parseRow(Space[] row) {
-        List<StateTranslator> parsedRow = new ArrayList<StateTranslator>();
+        List<SpaceState> parsedRow = new ArrayList<SpaceState>();
 
         for (Space space : row) {
             parsedRow.add(parseSpace(space));
@@ -33,12 +32,12 @@ public class BoardParser {
         return parsedRow;
     }
 
-    public StateTranslator parseSpace(Space space) {
-        if (isMiss(space)) { return StateTranslator.MISS; }
-        if (isWater(space)) { return StateTranslator.WATER; }
-        if (isHit(space)) { return StateTranslator.HIT; }
+    public SpaceState parseSpace(Space space) {
+        if (isMiss(space)) { return SpaceState.MISS; }
+        if (isWater(space)) { return SpaceState.WATER; }
+        if (isHit(space)) { return SpaceState.HIT; }
 
-        return StateTranslator.SHIP;
+        return SpaceState.SHIP;
     }
 
 

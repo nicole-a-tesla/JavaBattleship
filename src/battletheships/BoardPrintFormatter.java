@@ -26,13 +26,13 @@ public class BoardPrintFormatter {
         ArrayList formattedRow = new ArrayList();
 
         for (Object spaceState : row) {
-            formattedRow.add(formatSpace((StateTranslator) spaceState));
+            formattedRow.add(formatSpace((SpaceState) spaceState));
         }
 
         return formattedRow;
     }
 
-    public String formatSpace(StateTranslator spaceState) {
+    public String formatSpace(SpaceState spaceState) {
         return (String) printKey.dictionary.get(spaceState);
     }
 
