@@ -8,8 +8,9 @@ import java.util.List;
  */
 public class BoardParser {
 
-    public ArrayList<ArrayList> parse(Space[][] spaces) {
+    public ArrayList<ArrayList> parse(Board board) {
         ArrayList parsedBoard = new ArrayList();
+        Space[][] spaces = board.spaces();
 
         for (int i=0; i<spaces.length; i++)
             parsedBoard.add(parseRow(spaces[i]));

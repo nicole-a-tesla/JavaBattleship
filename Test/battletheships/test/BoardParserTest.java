@@ -25,12 +25,11 @@ public class BoardParserTest {
     public void setup() {
         parser = new BoardParser();
         board = new Board();
-        spaces = board.spaces();
     }
 
     @Test
     public void parseTakesSpacesAsArgument() {
-        parser.parse(spaces);
+        parser.parse(board);
     }
 
     @Test
@@ -172,7 +171,7 @@ public class BoardParserTest {
         ArrayList<ArrayList> expectedEmptyBoard = generateExpectedEmptyBoard();
 
         Board board = new Board();
-        ArrayList<ArrayList> parsedEmptyBoard = parser.parse(spaces);
+        ArrayList<ArrayList> parsedEmptyBoard = parser.parse(board);
 
         assertEquals(expectedEmptyBoard, parsedEmptyBoard);
 
