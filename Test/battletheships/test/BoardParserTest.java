@@ -18,16 +18,19 @@ public class BoardParserTest {
     Space space2;
     List<SpaceState> expected;
     Ship ship;
+    Board board;
+    Space[][] spaces;
 
     @Before
     public void setup() {
         parser = new BoardParser();
+        board = new Board();
+        spaces = board.spaces();
     }
 
     @Test
-    public void parseTakesBoardAsArgument() {
-        Board board = new Board();
-        parser.parse(board);
+    public void parseTakesSpacesAsArgument() {
+        parser.parse(spaces);
     }
 
     @Test
@@ -169,7 +172,7 @@ public class BoardParserTest {
         ArrayList<ArrayList> expectedEmptyBoard = generateExpectedEmptyBoard();
 
         Board board = new Board();
-        ArrayList<ArrayList> parsedEmptyBoard = parser.parse(board);
+        ArrayList<ArrayList> parsedEmptyBoard = parser.parse(spaces);
 
         assertEquals(expectedEmptyBoard, parsedEmptyBoard);
 
