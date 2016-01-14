@@ -19,7 +19,6 @@ public class BoardParserTest {
     List<SpaceState> expected;
     Ship ship;
     Board board;
-    Space[][] spaces;
 
     @Before
     public void setup() {
