@@ -6,6 +6,11 @@ import java.util.ArrayList;
  * Created by bears8yourface on 1/13/16.
  */
 public class BoardPrintFormatter {
+    private PrintKey printKey;
+
+    public BoardPrintFormatter(PrintKey printKey){
+        this.printKey = printKey;
+    }
 
     public ArrayList<ArrayList> format(ArrayList<ArrayList> parsedBoard) {
         ArrayList<ArrayList> formatted = new ArrayList<ArrayList>();
@@ -28,22 +33,7 @@ public class BoardPrintFormatter {
     }
 
     public String formatSpace(StateTranslator spaceState) {
-        String formatted = "";
-
-        switch (spaceState) {
-            case WATER:
-                formatted = "~";
-                break;
-            case SHIP:
-                formatted = "^";
-                break;
-            case HIT:
-                formatted = "X";
-                break;
-            case MISS:
-                formatted = "0";
-                break;
-        }
-        return formatted;
+        return (String) printKey.dictionary.get(spaceState);
     }
+
 }

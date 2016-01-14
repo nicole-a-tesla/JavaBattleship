@@ -1,11 +1,11 @@
 package battletheships.test;
 
 import battletheships.BoardPrintFormatter;
+import battletheships.PrintKey;
 import battletheships.StateTranslator;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,17 +14,7 @@ import static org.junit.Assert.assertEquals;
  */
 
 public class BoardPrintFormatterTest {
-
-    public static final HashMap map = new HashMap<StateTranslator, String>() {
-        {
-            put(StateTranslator.WATER, "~");
-            put(StateTranslator.SHIP, "^");
-            put(StateTranslator.MISS, "0");
-            put(StateTranslator.HIT, "X");
-        }
-    };
-
-
+    private PrintKey printKey = new PrintKey();
 
     private ArrayList generateParsedRowOf(StateTranslator state) {
         ArrayList row = new ArrayList();
@@ -46,7 +36,7 @@ public class BoardPrintFormatterTest {
         ArrayList row = new ArrayList();
 
         for (int i=0; i<10; i++)
-            row.add(map.get(state));
+            row.add(printKey.dictionary.get(state));
         return row;
     }
 
@@ -61,7 +51,7 @@ public class BoardPrintFormatterTest {
     @Test
     public void formatsBoardOfWater() {
         ArrayList<ArrayList> parsedBoard = generateParsedBoardOf(StateTranslator.WATER);
-        BoardPrintFormatter formatter = new BoardPrintFormatter();
+        BoardPrintFormatter formatter = new BoardPrintFormatter(printKey);
         ArrayList expected = generateFormattedBoardOf(StateTranslator.WATER);
         ArrayList formatted = formatter.format(parsedBoard);
 
