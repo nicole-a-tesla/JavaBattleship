@@ -13,24 +13,54 @@ public class BoardPrintFormatter {
         this.printDictionary = printDictionary;
     }
 
-    public ArrayList<ArrayList> format(ArrayList<ArrayList> parsedBoard) {
-        ArrayList<ArrayList> formatted = new ArrayList<ArrayList>();
+    public ArrayList format(ArrayList<ArrayList> parsedBoard) {
+        ArrayList formatted = new ArrayList<>();
 
-        for (ArrayList row : parsedBoard)
-            formatted.add(formatRow(row));
+        ArrayList row1 = parsedBoard.get(0);
+        String xAxis = getXAxis(row1);
+        formatted.add(xAxis);
+
+        for (int i=0; i<parsedBoard.size(); i++) {
+            int y_coord = i;
+            ArrayList row = parsedBoard.get(i);
+
+            formatted.add("\n");
+            formatted.add(formatRow(row, y_coord));
+
+        }
         return formatted;
     }
 
-    public ArrayList<String> formatRow(ArrayList row) {
-        ArrayList formattedRow = new ArrayList();
+    private String formatRow(ArrayList row, int y_coord) {
+        StringBuilder formattedRow = new StringBuilder();
+        String formattedYCoord = formatSpace(new Integer(y_coord).toString());
+        formattedRow.append(formattedYCoord);
 
-        for (Object spaceState : row)
-            formattedRow.add(formatSpace((SpaceState) spaceState));
-        return formattedRow;
+        for (Object spaceState : row) {
+            String stateString = spaceStateToString((SpaceState) spaceState);
+            formattedRow.append(formatSpace(stateString));
+        }
+        return formattedRow.toString();
     }
 
-    public String formatSpace(SpaceState spaceState) {
+    private String formatSpace(String spaceContents) {
+        return "| " + spaceContents + " ";
+    }
+
+    private String spaceStateToString(SpaceState spaceState) {
         return (String) printDictionary.get(spaceState);
+    }
+
+    private String getXAxis(ArrayList row) {
+        int size = row.size();
+        StringBuffer axis = new StringBuffer();
+        axis.append(formatSpace(" "));
+
+        for (int i=0; i<size; i++) {
+            axis.append(formatSpace(new Integer(i).toString()));
+        }
+
+        return axis.toString();
     }
 
 }

@@ -2,7 +2,9 @@ package battletheships.test;
 
 import battletheships.BoardPrintFormatter;
 import battletheships.PrintKey;
+import battletheships.Space;
 import battletheships.SpaceState;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -16,14 +18,26 @@ import static org.junit.Assert.assertEquals;
 
 public class BoardPrintFormatterTest {
     private HashMap printDictionary = new PrintKey().dictionary;
+    private BoardPrintFormatter formatter = new BoardPrintFormatter(printDictionary);
 
-    private ArrayList generateParsedRowOf(SpaceState state) {
-        ArrayList row = new ArrayList();
+    @Test
+    public void formatsBoardOfWater() {
+        ArrayList<ArrayList> parsedBoard = generateParsedBoardOf(SpaceState.WATER);
+        ArrayList expected = generateFormattedBoardOf(SpaceState.WATER);
+        ArrayList formatted = formatter.format(parsedBoard);
 
-        for (int i=0; i<10; i++)
-            row.add(state);
-        return row;
+        assertEquals(expected, formatted);
     }
+
+    @Test
+    public void formatsBoardOfMisses() {
+        ArrayList<ArrayList> parsedBoard = generateParsedBoardOf(SpaceState.MISS);
+        ArrayList expected = generateFormattedBoardOf(SpaceState.MISS);
+        ArrayList formatted = formatter.format(parsedBoard);
+
+        assertEquals(expected, formatted);
+    }
+
 
     private ArrayList<ArrayList> generateParsedBoardOf(SpaceState state) {
         ArrayList<ArrayList> board = new ArrayList<>();
@@ -33,29 +47,57 @@ public class BoardPrintFormatterTest {
         return board;
     }
 
-    private ArrayList generateFormattedRowOf(SpaceState state) {
+    private ArrayList generateParsedRowOf(SpaceState state) {
         ArrayList row = new ArrayList();
 
         for (int i=0; i<10; i++)
-            row.add(printDictionary.get(state));
+            row.add(state);
         return row;
     }
 
-    private ArrayList<ArrayList> generateFormattedBoardOf(SpaceState state) {
-        ArrayList<ArrayList> board = new ArrayList<>();
+    private ArrayList generateFormattedBoardOf(SpaceState state) {
+        ArrayList board = new ArrayList<>();
+        board.add(getXAxis());
 
-        for (int i=0; i<10; i++)
-            board.add(generateFormattedRowOf(state));
+        for (int i=0; i<10; i++) {
+            board.add("\n");
+            board.add(generateFormattedRowOf(state, i));
+        }
         return board;
     }
 
-    @Test
-    public void formatsBoardOfWater() {
-        ArrayList<ArrayList> parsedBoard = generateParsedBoardOf(SpaceState.WATER);
-        BoardPrintFormatter formatter = new BoardPrintFormatter(printDictionary);
-        ArrayList expected = generateFormattedBoardOf(SpaceState.WATER);
-        ArrayList formatted = formatter.format(parsedBoard);
+    private String generateFormattedRowOf(SpaceState state, int y_coord) {
+        StringBuilder formattedRow = new StringBuilder();
+        String formattedYCoord = formatSpace(new Integer(y_coord).toString());
+        formattedRow.append(formattedYCoord);
 
-        assertEquals(expected, formatted);
+        for (int i=0; i<10; i++)
+            formattedRow.append((generateSpace(state)));
+
+        return formattedRow.toString();
+    }
+
+    private String generateSpace(SpaceState state) {
+        String stateString = spaceStateToString(state);
+        return formatSpace(stateString);
+    }
+
+    private String spaceStateToString(SpaceState state) {
+        return (String) printDictionary.get(state);
+    }
+
+    private String formatSpace(String spaceContents) {
+        return "| " + spaceContents + " ";
+    }
+
+    private String getXAxis() {
+        StringBuffer axis = new StringBuffer();
+        axis.append(formatSpace(" "));
+
+        for (Integer i=0; i<10; i++) {
+            axis.append(formatSpace(i.toString()));
+        }
+
+        return axis.toString();
     }
 }
