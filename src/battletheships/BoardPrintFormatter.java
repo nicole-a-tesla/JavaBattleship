@@ -1,15 +1,16 @@
 package battletheships;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by bears8yourface on 1/13/16.
  */
 public class BoardPrintFormatter {
-    private PrintKey printKey;
+    private HashMap printDictionary;
 
-    public BoardPrintFormatter(PrintKey printKey){
-        this.printKey = printKey;
+    public BoardPrintFormatter(HashMap printDictionary){
+        this.printDictionary = printDictionary;
     }
 
     public ArrayList<ArrayList> format(ArrayList<ArrayList> parsedBoard) {
@@ -33,7 +34,7 @@ public class BoardPrintFormatter {
     }
 
     public String formatSpace(SpaceState spaceState) {
-        return (String) printKey.dictionary.get(spaceState);
+        return (String) printDictionary.get(spaceState);
     }
 
 }

@@ -6,6 +6,7 @@ import battletheships.SpaceState;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,7 +15,7 @@ import static org.junit.Assert.assertEquals;
  */
 
 public class BoardPrintFormatterTest {
-    private PrintKey printKey = new PrintKey();
+    private HashMap printDictionary = new PrintKey().dictionary;
 
     private ArrayList generateParsedRowOf(SpaceState state) {
         ArrayList row = new ArrayList();
@@ -36,7 +37,7 @@ public class BoardPrintFormatterTest {
         ArrayList row = new ArrayList();
 
         for (int i=0; i<10; i++)
-            row.add(printKey.dictionary.get(state));
+            row.add(printDictionary.get(state));
         return row;
     }
 
@@ -51,7 +52,7 @@ public class BoardPrintFormatterTest {
     @Test
     public void formatsBoardOfWater() {
         ArrayList<ArrayList> parsedBoard = generateParsedBoardOf(SpaceState.WATER);
-        BoardPrintFormatter formatter = new BoardPrintFormatter(printKey);
+        BoardPrintFormatter formatter = new BoardPrintFormatter(printDictionary);
         ArrayList expected = generateFormattedBoardOf(SpaceState.WATER);
         ArrayList formatted = formatter.format(parsedBoard);
 
