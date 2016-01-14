@@ -20,8 +20,8 @@ public class BoardPrintFormatter {
         String xAxis = getXAxis(row1);
         formatted.add(xAxis);
 
-        for (int i=0; i<parsedBoard.size(); i++) {
-            int y_coord = i;
+        for (Integer i=0; i<parsedBoard.size(); i++) {
+            Integer y_coord = i;
             ArrayList row = parsedBoard.get(i);
 
             formatted.add("\n");
@@ -31,9 +31,9 @@ public class BoardPrintFormatter {
         return formatted;
     }
 
-    private String formatRow(ArrayList row, int y_coord) {
+    private String formatRow(ArrayList row, Integer y_coord) {
         StringBuilder formattedRow = new StringBuilder();
-        String formattedYCoord = formatSpace(new Integer(y_coord).toString());
+        String formattedYCoord = formatSpace(y_coord.toString());
         formattedRow.append(formattedYCoord);
 
         for (Object spaceState : row) {
@@ -56,8 +56,8 @@ public class BoardPrintFormatter {
         StringBuffer axis = new StringBuffer();
         axis.append(formatSpace(" "));
 
-        for (int i=0; i<size; i++) {
-            axis.append(formatSpace(new Integer(i).toString()));
+        for (Integer i=0; i<size; i++) {
+            axis.append(formatSpace(i.toString()));
         }
 
         return axis.toString();
