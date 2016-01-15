@@ -12,7 +12,7 @@ import static org.mockito.Mockito.verify;
 /**
  * Created by bears8yourface on 1/14/16.
  */
-public class PrintManagerTest {
+public class BoardPrintManagerTest {
     Board board;
     BoardParser parser;
 
@@ -29,8 +29,8 @@ public class PrintManagerTest {
 
         ArrayList<ArrayList> parsedBoard = parser.parse(board);
 
-        PrintManager printManager = new PrintManager(parser, mockFormatter, printer);
-        printManager.printBoard(board);
+        BoardPrintManager boardPrintManager = new BoardPrintManager(parser, mockFormatter, printer);
+        boardPrintManager.printBoard(board);
 
         verify(mockFormatter).format(parsedBoard);
     }
@@ -44,8 +44,8 @@ public class PrintManagerTest {
         ArrayList<ArrayList> parsedBoard = parser.parse(board);
         ArrayList formattedBoard = formatter.format(parsedBoard);
 
-        PrintManager printManager = new PrintManager(parser, formatter, mockPrinter);
-        printManager.printBoard(board);
+        BoardPrintManager boardPrintManager = new BoardPrintManager(parser, formatter, mockPrinter);
+        boardPrintManager.printBoard(board);
 
         verify(mockPrinter).print((String) formattedBoard.get(0));
 

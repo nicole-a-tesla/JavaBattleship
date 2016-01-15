@@ -5,12 +5,12 @@ import java.util.ArrayList;
 /**
  * Created by bears8yourface on 1/14/16.
  */
-public class PrintManager {
+public class BoardPrintManager {
     private BoardParser parser;
     private BoardPrintFormatter formatter;
     private Printer printer;
 
-    public PrintManager(BoardParser parser, BoardPrintFormatter formatter, Printer printer) {
+    public BoardPrintManager(BoardParser parser, BoardPrintFormatter formatter, Printer printer) {
         this.parser = parser;
         this.formatter = formatter;
         this.printer = printer;
