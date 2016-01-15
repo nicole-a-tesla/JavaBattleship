@@ -23,12 +23,12 @@ public class PlayerTest {
 
     @Test
     public void playerHasPlayerBoard() {
-        player.playerBoard();
+        player.getPlayerBoard();
     }
 
     @Test
     public void playerHasOpponentBoard() {
-        player.opponentBoard();
+        player.getOpponentBoard();
     }
 
     @Test

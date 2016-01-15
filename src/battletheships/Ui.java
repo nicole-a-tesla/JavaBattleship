@@ -25,4 +25,8 @@ public class Ui {
     public void promptBoardSetup() {
 
     }
+
+    public int[] getShipPlacementCoordinates(Ship ship) {
+        return new int[]{0, 0};
+    }
 }

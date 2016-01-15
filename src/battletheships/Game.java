@@ -1,5 +1,7 @@
 package battletheships;
 
+import java.util.ArrayList;
+
 /**
  * Created by bears8yourface on 1/11/16.
  */
@@ -12,23 +14,46 @@ public class Game {
     private Ui ui = new Ui(printer);
     private BoardPrintManager boardPrintManager = new BoardPrintManager(parser, formatter, printer);
 
-    private Player humanPlayer;
-    private Player computerPlayer;
+    private HumanPlayer humanPlayer;
+    private ComputerPlayer computerPlayer;
+    private Player activePlayer;
 
     public Game(Ui ui) {
         this.ui = ui;
+        this.computerPlayer = new ComputerPlayer();
+        this.humanPlayer = new HumanPlayer();
+        activePlayer = humanPlayer;
+    }
+
+    public Player getActivePlayer() {
+        return activePlayer;
     }
 
     public void welcomeUser() {
         ui.welcomeUser();
     }
 
-    public void setupBoard(Player player) {
-        ui.promptBoardSetup();
-        // ship = ui.whichShip
-        // player.playerBoard.setShip(ship)
+    public Board setupBoard(Player player) {
+        if (player.getClass() == ComputerPlayer.class) {
+            player.setupBoard();
+
+        } else {
+            ui.promptBoardSetup();
+
+            ArrayList<Ship> playerShips = player.ships();
+
+            for (Ship ship: playerShips) {
+                getAndSetShipCoord(player, ship);
+            }
+
+        }
+        return player.getPlayerBoard();
     }
 
-
+    public void getAndSetShipCoord(Player player, Ship ship) {
+        int[] shipCoords = ui.getShipPlacementCoordinates(ship);
+        // temporarily defaults to horizontal placement
+        player.setShipAt(ship, shipCoords);
+    }
 
 }

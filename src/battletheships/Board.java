@@ -1,5 +1,7 @@
 package battletheships;
 
+import java.util.ArrayList;
+
 /**
  * Created by bears8yourface on 1/11/16.
  */
@@ -58,4 +60,19 @@ public class Board {
     public void logStrike(int x, int y) {
         getSpace(x, y).logHit();
     }
+
+    public Boolean isComplete() {
+        int fullSpaces = 0;
+        Space[][] grid = spaces();
+
+        for (Space[] row : grid) {
+            for (Space space : row) {
+                if (space.containsShip()) {
+                    fullSpaces++;
+                }
+            }
+        }
+        return fullSpaces == 17;
+    }
+
 }

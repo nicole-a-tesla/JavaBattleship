@@ -18,13 +18,22 @@ public class Player {
         return ships;
     }
 
-    public Board playerBoard() {
+    public Board getPlayerBoard() {
         return playerBoard;
     }
 
-    public Board opponentBoard() {
+    public Board getOpponentBoard() {
         return opponentBoard;
     }
+
+    public void setShipAt(Ship ship, int[] coords) {
+
+    }
+
+    public Board setupBoard() {
+        return getPlayerBoard();
+    }
+
 }
 
 

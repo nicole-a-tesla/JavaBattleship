@@ -90,4 +90,26 @@ public class BoardTest {
     public void boardCanTellIfSpaceIsEmpty() {
         assertEquals(true, board.isSpaceEmpty(0,0));
     }
+
+    @Test
+    public void boardCanTellIfItHas5ShipsWorthOfSpacesFilled() {
+       placeManyShips(board, 17);
+       assertEquals(true, board.isComplete());
+    }
+
+    @Test
+    public void boardCanTellIfItDoesNotHave5ShipsWorthOfSpacesFilled() {
+        placeManyShips(board, 16);
+       assertEquals(false, board.isComplete());
+    }
+
+    public void placeManyShips(Board board, int numOfShips) {
+        for (int i=0; i<numOfShips; i++)
+            if (i<10){
+                board.setContents(i, i, ship);
+            } else {
+                board.setContents(i-7, i-9, ship);
+            }
+    }
+
 }
