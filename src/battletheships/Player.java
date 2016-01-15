@@ -1,18 +1,29 @@
 package battletheships;
 
+import java.util.ArrayList;
+
 /**
  * Created by bears8yourface on 1/11/16.
  */
 public class Player {
-    private Ship[] ships = new Ship[5];
-    private Board board = new Board();
+    private ArrayList ships;
+    private Board playerBoard = new Board();
+    private Board opponentBoard;
 
-    public Ship[] ships() {
+    public Player() {
+        ships = new FleetBuilder().build();
+    }
+
+    public ArrayList ships() {
         return ships;
     }
 
-    public Board board() {
-        return board;
+    public Board playerBoard() {
+        return playerBoard;
+    }
+
+    public Board opponentBoard() {
+        return opponentBoard;
     }
 }
 

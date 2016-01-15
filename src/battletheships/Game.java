@@ -4,11 +4,31 @@ package battletheships;
  * Created by bears8yourface on 1/11/16.
  */
 public class Game {
-    public Player player1;
-    public Player player2;
-    public Ui ui;
+    private PrintKey printKey = new PrintKey();
+    private BoardPrintFormatter formatter = new BoardPrintFormatter(printKey.dictionary);
+    private BoardParser parser = new BoardParser();
+    private Printer printer = new ConsolePrinter();
 
-    public Game(Player player1, Player player2, Ui ui) {
+    private Ui ui = new Ui(printer);
+    private BoardPrintManager boardPrintManager = new BoardPrintManager(parser, formatter, printer);
 
+    private Player humanPlayer;
+    private Player computerPlayer;
+
+    public Game(Ui ui) {
+        this.ui = ui;
     }
+
+    public void welcomeUser() {
+        ui.welcomeUser();
+    }
+
+    public void setupBoard(Player player) {
+        ui.promptBoardSetup();
+        // ship = ui.whichShip
+        // player.playerBoard.setShip(ship)
+    }
+
+
+
 }

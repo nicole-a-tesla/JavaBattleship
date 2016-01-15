@@ -4,6 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 /**
  * Created by bears8yourface on 1/11/16.
@@ -11,29 +13,41 @@ import static org.junit.Assert.assertEquals;
 
 
 public class GameTest {
+    Player humanPlayer = new Player();
     Game game;
     Printer consolePrinter = new ConsolePrinter();
     Ui ui = new Ui(consolePrinter);
-    Player player1 = new Player();
-    Player player2 = new Player();
+//
+//    @Before
+//    public void setUp(){
+//        game = new Game(ui);
+//    }
 
-    @Before
-    public void setUp(){
-        game = new Game(player1, player2, ui);
+    @Test
+    public void gameWelcomesPlayer() {
+        Ui mockUi = mock(Ui.class);
+        Game game = new Game(mockUi);
+
+        game.welcomeUser();
+        verify(mockUi).welcomeUser();
     }
 
     @Test
-    public void player1Exists() {
-        Player player = game.player1;
+    public void asksHumanPlayerToSetUpBoard() {
+        Ui mockUi = mock(Ui.class);
+        Game game = new Game(mockUi);
+
+        game.setupBoard(humanPlayer);
+        verify(mockUi).promptBoardSetup();
     }
 
-    @Test
-    public void player2Exists() {
-        Player player = game.player2;
-    }
-
-    @Test
-    public void uiExists() { Ui ui = game.ui; }
+    // human sets up board
+        // generates opponent board for computer
+    // computer player sets up board
+        // generates opponent board for human
+    // tell first player its turn
+    // gets shot from player
+    // tells
 
 
 }

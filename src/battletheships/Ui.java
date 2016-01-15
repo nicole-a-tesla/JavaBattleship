@@ -17,4 +17,12 @@ public class Ui {
     public void print(String string) {
         printer.print(string);
     }
+
+    public void welcomeUser() {
+
+    }
+
+    public void promptBoardSetup() {
+
+    }
 }
